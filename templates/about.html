@@ -43,11 +43,11 @@
     </div>
     <!-- end Preloader -->
 
-    <div class="container-fluid"> 
-       <!-- box-header -->
+    <div class="container-fluid">
+        <!-- box-header -->
         <header class="box-header">
             <div class="box-logo">
-                <a href="index.html"><img src="{% static 'img/logo.png' %}" width="80" alt="Logo"></a>
+                <a href="index.html"><img src="{% static 'img/apara_logo4.png' %}" width="80" alt="Logo"></a>
             </div>
             <!-- box-nav -->
             <a class="box-primary-nav-trigger" href="#0">
@@ -55,54 +55,72 @@
             </a>
         </header>
         <!-- end box-header -->
-        
+
         <!-- nav -->
         <nav>
             <ul class="box-primary-nav">
                 <li class="box-label">About me</li>
-                
-                <li><a href="index.html">Intro</a></li>
-                <li><a href="about.html">About me</a> <i class="ion-ios-circle-filled color"></i></li>
-                <li><a href="services.html">services</a></li>
-                <li><a href="portfolio.html">portfolio</a></li>
-                <li><a href="contact.html">contact me</a></li>
+
+                <li><a href="{% url 'home' %}">Intro</a></li>
+                <li><a href="{% url 'about' %}">About me</a> <i class="ion-ios-circle-filled color"></i></li>
+                <li><a href="{% url 'services' %}">Services</a></li>
+                <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+                <li><a href="{% url 'contact' %}">Contact me</a></li>
 
                 <li class="box-label">Follow me</li>
 
-                <li class="box-social"><a href="#0"><i class="ion-social-facebook"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-instagram-outline"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-twitter"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-dribbble"></i></a></li>
+                <li class="box-social"><a href="https://www.facebook.com/apara.biswas.3"><i
+                            class="ion-social-facebook"></i></a></li>
+                <li class="box-social"><a href="https://www.instagram.com/apara_28/"><i
+                            class="ion-social-instagram-outline"></i></a></li>
+                <li class="box-social"><a href="https://www.linkedin.com/in/apara-biswas-a46274212/"><i
+                            class="ion-social-linkedin"></i></a></li>
+                <li class="box-social"><a href="https://github.com/alogogeek"><i class="ion-social-github"></i></a></li>
             </ul>
         </nav>
-        <!-- end nav -->  
+        <!-- end nav -->
     </div>
-    
+
     <!-- Top bar -->
-    <div class="top-bar">
+    <div class="top-bar" style="background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url('{% static 'img/00.jpg/' %}');
+    background: linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url('{% static 'img/00.jpg/' %}'); background-size:cover;
+    background-attachment:fixed;
+    background-position:center center;
+    text-align:center;">
         <h1>About Me</h1>
-        <p><a href="#">Home</a> / About me</p>
+        <p><a href="/">Home</a> / <a href="{% url 'about' %}">About me</a></p>
     </div>
     <!-- end Top bar -->
-    
+
     <!-- Main container -->
-    <div class="container main-container clearfix"> 
+    <div class="container main-container clearfix">
         <div class="col-md-6">
-            <img src="http://placehold.it/1200x800" class="img-responsive" alt="" />
+            <img src="{% static 'img/luna.jpg' %}" width="500" class="img-responsive" alt="" />
         </div>
         <div class="col-md-6">
-           <h3 class="uppercase">About Me </h3>
-           <h5>Creative & Lorem ipsum dolor sit amet</h5>
-           <div class="h-30"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliter enim nosmet ipsos nosse non possumus. Inscite autem medicinae et gubernationis ultimum cum ultimo sapientiae comparatur. Tecum optime, deinde etiam cum mediocri amico. Et nemo nimium beatus est; Ac ne plura complectar-sunt enim innumerabilia-, bene laudata virtus voluptatis aditus </p>
+            &nbsp;
 
-            <p>Tum ille: Tu autem cum ipse tantum librorum habeas, quos hic tandem requiris? Esse enim quam vellet iniquus iustus poterat inpune. </p>
+            <h3>Hi ! I'm APARA BISWAS</h3>
+
+            <h5 style="font-size:18px;">Web Developer</h5>
+            <div class="h-30"></div>
+            <p style="font-size:15px;">I am a 2nd year Undergrad pursuing B.Tech in Computer Science and Engineering at NIT Silchar and a resident of Udalguri, Assam, India. I am a Web
+                Developer in Django and a coding enthusiast with a zeal of problem solving with coding and
+                development. In addition to this, I am a 6 star in Problem Solving with C++ in HackerRank and a 2
+                star in CodeChef with Max Rating of 1563. I always have a keen interest in learning new skills and
+                improve my knowledge in my sphere of activity. Creative writing is what I love to do in my spare time.
+            </p>
+
+
             <div class="h-10"></div>
             <ul class="social-ul">
-                <li class="box-social"><a href="#0"><i class="ion-social-facebook"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-instagram-outline"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-twitter"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-dribbble"></i></a></li>
+                <li class="box-social"><a href="https://www.facebook.com/apara.biswas.3"><i
+                            class="ion-social-facebook"></i></a></li>
+                <li class="box-social"><a href="https://www.instagram.com/apara_28/"><i
+                            class="ion-social-instagram-outline"></i></a></li>
+                <li class="box-social"><a href="https://www.linkedin.com/in/apara-biswas-a46274212/"><i
+                            class="ion-social-linkedin"></i></a></li>
+                <li class="box-social"><a href="https://github.com/alogogeek"><i class="ion-social-github"></i></a></li>
             </ul>
 
 
@@ -114,11 +132,11 @@
     <!-- footer -->
     <footer>
         <div class="container-fluid">
-            <p class="copyright">© Box Portfolio 2016</p>
+            <p class="copyright">MyPortfolio</p>
         </div>
     </footer>
     <!-- end footer -->
-    
+
     <!-- back to top -->
     <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
     <!-- end back to top -->

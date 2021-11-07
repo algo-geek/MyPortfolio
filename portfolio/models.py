@@ -20,4 +20,9 @@ class Project(models.Model):
     def __str__(self):
         return self.name
 
-
+class Service(models.Model):
+    s_name = models.CharField(max_length=25)
+    icon_link = models.URLField()
+    s_des = models.CharField(max_length=150)
+    def __str__(self):
+        return self.s_name + " " + self.s_des

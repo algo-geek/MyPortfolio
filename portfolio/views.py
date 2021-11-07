@@ -41,7 +41,7 @@ def contact(request):
             name + "has sent an email",
             template_email,
             settings.EMAIL_HOST_USER,
-            ['debroyshayan@gmail.com']
+            ['aparabiswas28@gmail.com']
 
         )
         email_obj.fail_silently = False
@@ -55,7 +55,11 @@ def contact(request):
     return render(request, "contact.html")  
 
 def services(request):
-    return render(request, "services.html")
+    services=Service.objects.all()
+    context={
+        'services':services
+    }
+    return render(request, "services.html", context)
 
 def about(request):
     return render(request, "about.html")  
